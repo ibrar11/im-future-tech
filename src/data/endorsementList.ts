@@ -1,19 +1,19 @@
 type EndorsementType = {
-  count: string;
-  text: string;
-};
+  number: string
+  text: string
+}
 
 export const items: EndorsementType[] = [
   {
-    count: "300",
-    text: "Resources available",
+    number: '300',
+    text: 'Resources available',
   },
   {
-    count: "12k",
-    text: "Total Downloads ",
+    number: '12k',
+    text: 'Total Downloads ',
   },
   {
-    count: "10k",
-    text: "Active Users",
+    number: '10k',
+    text: 'Active Users',
   },
-];
+]
