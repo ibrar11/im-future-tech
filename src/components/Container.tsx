@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import { tw } from "@/utils/Tw";
 
 type childrenType = {
-    children: JSX.Element | JSX.Element[]
-}
+  children: React.ReactNode;
+};
 
 const Container = ({ children }: childrenType) => {
-    return <div className={`max-w-container 2xl:max-w-desktop-container mx-auto px-5`}>{children}</div>;
-  }
+  return (
+    <div
+      className={tw`2xl:max-w-desktop-containers mx-auto max-w-container px-5`}
+    >
+      {children}
+    </div>
+  );
+};
 
 export default Container;
