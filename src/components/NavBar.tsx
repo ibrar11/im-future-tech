@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import CircularBlade from "../../public/icons/regular/circular-blade/CircularBlade";
+import CircularBlade from "../../public/icons/duotones/circular-blade/CircularBlade";
 import { HamburgerIcon } from ".";
 
 const NavBar = () => {

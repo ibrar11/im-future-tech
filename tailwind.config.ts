@@ -48,6 +48,9 @@ const config: Config = {
       },
       width: {
         "custom-width": "calc(100% + 6.5px)",
+      },
+      fontSize: {
+        "4.5xl":"40px",
       }
     },
   },
