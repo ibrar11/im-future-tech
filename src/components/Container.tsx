@@ -1,11 +1,12 @@
 import React from "react";
 import { tw } from "@/utils/Tw";
 
-type childrenType = {
+type ContainerProps = {
   children: React.ReactNode;
 };
 
-const Container = ({ children }: childrenType) => {
+const Container = (props: ContainerProps) => {
+  const { children } = props;
   return (
     <div
       className={tw`2xl:max-w-desktop-containers mx-auto max-w-container px-5`}

@@ -1,6 +1,4 @@
-import LoadingIcon from "../../public/icons/duotones/LoadingIcon";
-import InfinityCross from "../../public/icons/duotones/InfinityCross";
-import DoubleLeaf from "../../public/icons/duotones/DoubleLeaf";
+import { LoadingIcon, DoubleLeaf, InfinityCross } from "@/icons";
 
 interface BenefitsListItem {
   icon: React.ReactNode;
