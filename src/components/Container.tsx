@@ -1,5 +1,5 @@
-import React from "react";
-import { tw } from "@/utils/Tw";
+import React from 'react'
+import { tw } from '@/utils/Tw'
 
 type ContainerProps = {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ const Container = (props: ContainerProps) => {
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default Container;
+export default Container

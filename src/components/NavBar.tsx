@@ -5,27 +5,27 @@ import { CircularBlade } from "@/icons";
 import { HamburgerIcon } from ".";
 
 const NavBar = () => {
-  const [dropDown, setDropDown] = useState(false);
+  const [dropDown, setDropDown] = useState(false)
 
   const handleDropDown = () => {
-    setDropDown(!dropDown);
-  };
+    setDropDown(!dropDown)
+  }
 
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 640) {
-        setDropDown(false);
+        setDropDown(false)
       }
-    };
+    }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   return (
     <nav className="flex items-center">
@@ -37,7 +37,7 @@ const NavBar = () => {
       </div>
       <HamburgerIcon isNavOpened={dropDown} handleDropDown={handleDropDown} />
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

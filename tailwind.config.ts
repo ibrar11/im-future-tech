@@ -51,6 +51,9 @@ const config: Config = {
         "custom-width": "calc(100% + 6.5px)",
         13: "52px",
       },
+      fontSize: {
+        "4.5xl":"40px",
+      },
     },
   },
   plugins: [],
