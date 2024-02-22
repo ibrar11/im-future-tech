@@ -15,7 +15,7 @@ const config: Config = {
       },
       maxWidth: {
         container: "1320px",
-        "desktop-container" : "1626px"
+        "desktop-container": "1626px",
       },
       colors: {
         "yellow-900": "#FBFBFE",
@@ -44,11 +44,13 @@ const config: Config = {
         "grey-200": "#7E7E81",
       },
       height: {
-        0.5:"2px"
+        0.5: "2px",
+        13: "52px",
       },
       width: {
         "custom-width": "calc(100% + 6.5px)",
-      }
+        13: "52px",
+      },
     },
   },
   plugins: [],
