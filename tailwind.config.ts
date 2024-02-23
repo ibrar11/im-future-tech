@@ -44,19 +44,19 @@ const config: Config = {
         'grey-200': '#7E7E81',
       },
       height: {
-        0.5: "2px",
-        13: "52px",
+        0.5: '2px',
+        13: '52px',
       },
       width: {
         'calc-width': 'calc(100% + 6.5px)',
-        13: "52px",
+        13: '52px',
       },
       fontSize: {
         '4.5xl': '40px',
       },
       gap: {
         15: '60px',
-      },,
+      },
     },
   },
   plugins: [],
