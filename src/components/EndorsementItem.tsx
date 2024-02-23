@@ -1,5 +1,5 @@
 import React from 'react'
-import { tw } from '../../utils/TW'
+import { tw } from '../utils/Tw'
 
 type EndorsementItemProps = {
   number: string
@@ -14,7 +14,7 @@ const EndorsementItem = (props: EndorsementItemProps) => {
     <div
       className={tw`flex flex-col items-start justify-center py-5 ${styles}`}
     >
-      <h3 className="text-2xl font-semibold text-white md:text-3xl 2xl:text-4.5xl">
+      <h3 className="2xl:text-4.5xl text-2xl font-semibold text-white md:text-3xl">
         {number}
         <span className="text-yellow-200">+</span>
       </h3>
