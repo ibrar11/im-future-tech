@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 type props = {
-  isNavOpened: boolean;
-  handleDropDown: () => void;
-};
+  isNavOpened: boolean
+  handleDropDown: () => void
+}
 
 const HamburgerIcon = ({ isNavOpened, handleDropDown }: props) => {
   return (
@@ -13,21 +13,21 @@ const HamburgerIcon = ({ isNavOpened, handleDropDown }: props) => {
     >
       <div
         className={`h-0.5 ${
-          isNavOpened ? "w-custom-width origin-[1px_1px] rotate-45" : ""
+          isNavOpened ? 'w-calc-width origin-[1px_1px] rotate-45' : ''
         } rounded-md bg-white transition-all duration-300`}
       ></div>
       <div
         className={`${
-          isNavOpened ? "h-0 w-0 opacity-0" : "w-full"
+          isNavOpened ? 'h-0 w-0 opacity-0' : 'w-full'
         } h-0.5 rounded-md bg-white transition-all duration-300`}
       ></div>
       <div
         className={`h-0.5 ${
-          isNavOpened ? "w-custom-width origin-[1px_1px] -rotate-45" : ""
+          isNavOpened ? 'w-calc-width origin-[1px_1px] -rotate-45' : ''
         } rounded-md bg-white transition-all duration-300`}
       ></div>
     </div>
-  );
-};
+  )
+}
 
-export default HamburgerIcon;
+export default HamburgerIcon
