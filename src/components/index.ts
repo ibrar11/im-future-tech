@@ -5,6 +5,7 @@ export { default as NavBar } from '@/components/NavBar'
 export { default as HamburgerIcon } from '@/components/HamburgerIcon'
 export { default as EndorsementItem } from '@/components/EdorsementItem/EndorsementItem'
 export { default as FeatureTitle } from '@/components/FeatureTitle/FeatureTitle'
+export { default as FeatureCard } from '@/components/FeatureCard/FeatureCard'
 
 //sections
 
