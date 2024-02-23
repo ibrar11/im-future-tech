@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DuoBricksTriangle = ({ size = '40' }: iconProps) => {
+const DuoBricksTriangle = ({ size = '80' }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
