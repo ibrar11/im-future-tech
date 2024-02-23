@@ -1,3 +1,5 @@
+import { Container, FeatureCard } from '@/components'
+
 export default function Home() {
 
   return (
