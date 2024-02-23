@@ -1,11 +1,8 @@
-import { Container, FeatureCard } from '@/components'
+import React from 'react'
 
 export default function Home() {
   return (
     <main>
-      <Container>
-        <FeatureCard />
-      </Container>
     </main>
   )
 }
