@@ -1,5 +1,5 @@
-import React from 'react'
-import { ArrowUpRight } from '@/icons'
+import React from "react";
+import { ArrowUpRight } from "@/icons";
 
 const TopBanner = () => {
   return (
