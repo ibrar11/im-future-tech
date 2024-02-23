@@ -6,6 +6,8 @@ export { default as HamburgerIcon } from '@/components/HamburgerIcon'
 export { default as EndorsementItem } from '@/components/EdorsementItem/EndorsementItem'
 export { default as FeatureTitle } from '@/components/FeatureTitle/FeatureTitle'
 export { default as FeatureCard } from '@/components/FeatureCard/FeatureCard'
+export { default as AchievementCard } from '@/components/AchievementCard/AchievementCard'
+export { default as Button } from '@/components/Button'
 
 //sections
 

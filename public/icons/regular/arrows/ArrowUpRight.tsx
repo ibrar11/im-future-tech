@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowUpRight = ({ size = "20", color = "white" }: iconProps) => {
+const ArrowUpRight = ({ size = "24", color = "white" }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

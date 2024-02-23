@@ -1,8 +1,8 @@
-'use client'
-import { useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
-import { CircularBlade } from '@/icons'
-import { HamburgerIcon } from '.'
+"use client";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { CircularBlade } from "@/icons";
+import { HamburgerIcon } from ".";
 
 const NavBar = () => {
   const [dropDown, setDropDown] = useState(false)
