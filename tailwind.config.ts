@@ -45,9 +45,11 @@ const config: Config = {
       },
       height: {
         0.5: '2px',
+        15: '60px',
       },
       width: {
         'calc-width': 'calc(100% + 6.5px)',
+        15: '60px',
       },
       fontSize: {
         '4.5xl': '40px',
