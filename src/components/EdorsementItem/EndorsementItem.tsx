@@ -1,5 +1,5 @@
 import React from 'react'
-import { tw } from '../utils/Tw'
+import { tw } from '../../utils/Tw'
 
 type EndorsementItemProps = {
   number: string

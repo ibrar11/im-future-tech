@@ -47,15 +47,13 @@ const config: Config = {
         0.5: '2px',
       },
       width: {
-        'custom-width': 'calc(100% + 6.5px)',
+        'calc-width': 'calc(100% + 6.5px)',
       },
       fontSize: {
         '4.5xl': '40px',
       },
       gap: {
         15: '60px',
-        '1.5': '6px',
-        '2.5': '10px',
       },
     },
   },

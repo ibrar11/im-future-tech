@@ -1,4 +1,4 @@
-import { ElipticalPlus, BricksTriangle } from '@/icons'
+import { DuoElipticalPlus, DuoBricksTriangle } from '@/icons'
 
 type FeatureTitle = {
   icon: React.ReactNode
@@ -8,13 +8,13 @@ type FeatureTitle = {
 
 export const featureTitles: FeatureTitle[] = [
   {
-    icon: <ElipticalPlus />,
+    icon: <DuoElipticalPlus />,
     title: 'Future Technology Blog',
     description:
       'Stay informed with our blog section dedicated to future technology.',
   },
   {
-    icon: <BricksTriangle />,
+    icon: <DuoBricksTriangle />,
     title: 'Research Insights Blogs',
     description:
       'Dive deep into future technology concepts with our research section.',

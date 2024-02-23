@@ -3,8 +3,8 @@ export { default as Divider } from '@/components/Divider'
 export { default as TopBanner } from '@/components/TopBanner'
 export { default as NavBar } from '@/components/NavBar'
 export { default as HamburgerIcon } from '@/components/HamburgerIcon'
-export { default as EndorsementItem } from '@/components/EndorsementItem'
-export { default as FeatureTitle } from '@/components/FeatureTitle'
+export { default as EndorsementItem } from '@/components/EdorsementItem/EndorsementItem'
+export { default as FeatureTitle } from '@/components/FeatureTitle/FeatureTitle'
 
 //sections
 

@@ -1,34 +1,9 @@
-'use client'
-import React, { useState, useEffect } from 'react'
-
-const ElipticalPlus = ({ size = '40' }: iconProps) => {
-  const [iconSize, setIconSize] = useState(size)
-
-  useEffect(() => {
-    const handleResize = () => {
-      const newSize =
-        window.innerWidth >= 768
-          ? '60'
-          : window.innerWidth >= 1536
-            ? '80'
-            : size
-      setIconSize(newSize)
-    }
-
-    handleResize()
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [size])
-
+const DuoElipticalPlus = ({ size = '40' }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={iconSize}
-      height={iconSize}
+      width={size}
+      height={size}
       fill="none"
       viewBox="0 0 60 61"
     >
@@ -44,4 +19,4 @@ const ElipticalPlus = ({ size = '40' }: iconProps) => {
   )
 }
 
-export default ElipticalPlus
+export default DuoElipticalPlus
