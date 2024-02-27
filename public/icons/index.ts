@@ -8,6 +8,7 @@ export { default as DuoInfinityCross } from './duotones/DuoInfinityCross.tsx';
 export { default as DuoLoadingIcon } from './duotones/DuoLoadingIcon.tsx';
 export { default as ArrowUpRight } from './regular/arrows/ArrowUpRight.tsx';
 export { default as EmptyChatBubble } from './regular/chatBubble/EmptyChatBubble.tsx';
+export { default as Eye } from './regular/eyes/Eye.tsx';
 export { default as EmptyHeart } from './regular/heart/EmptyHeart.tsx';
 export { default as Heart } from './regular/heart/Heart.tsx';
 export { default as ShareIconTrinangle } from './regular/triangle/ShareIconTrinangle.tsx';
