@@ -1,5 +1,5 @@
 
-const LoadingIcon = ({ size = "30" }: iconProps) => {
+const DuoLoadingIcon = ({ size = "30" }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +20,4 @@ const LoadingIcon = ({ size = "30" }: iconProps) => {
   );
 };
 
-export default LoadingIcon;
+export default DuoLoadingIcon;

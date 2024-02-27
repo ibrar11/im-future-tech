@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const DoubleLeaf = ({ size = "30" }: iconProps) => {
+const DuoDoubleLeaf = ({ size = '30' }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ const DoubleLeaf = ({ size = "30" }: iconProps) => {
         d="M3 15h12c6.627 0 12 5.373 12 12H15C8.373 27 3 21.627 3 15z"
       ></path>
     </svg>
-  );
-};
+  )
+}
 
-export default DoubleLeaf;
+export default DuoDoubleLeaf

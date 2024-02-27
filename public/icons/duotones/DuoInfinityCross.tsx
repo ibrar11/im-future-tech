@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const InfinityCross = ({ size = "30" }: iconProps) => {
+const DuoInfinityCross = ({ size = '30' }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const InfinityCross = ({ size = "30" }: iconProps) => {
         clipRule="evenodd"
       ></path>
     </svg>
-  );
-};
+  )
+}
 
-export default InfinityCross;
+export default DuoInfinityCross
