@@ -9,6 +9,7 @@ export { default as FeatureCard } from '@/components/FeatureCard/FeatureCard'
 export { default as AchievementCard } from '@/components/AchievementCard/AchievementCard'
 export { default as ListItem } from '@/components/ListItem/ListItem'
 export { default as PostContentItem } from '@/components/PostContentItem/PostContentItem'
+export { default as PostInteractableItem } from '@/components/PostInteractableItem/PostInteractableItem'
 export { default as Button } from '@/components/Button'
 
 //sections
