@@ -1,4 +1,4 @@
-export { default as CircularBlade } from './duotones/CircularBlade.tsx'
+export { default as CircularBlade } from './duotones/DuoCircularBlade.tsx'
 export { default as DoubleLeaf } from './duotones/DoubleLeaf.tsx'
 export { default as DuoBricksTriangle } from './duotones/DuoBricksTriangle.tsx'
 export { default as DuoElipticalPlus } from './duotones/DuoElipticalPlus.tsx'
