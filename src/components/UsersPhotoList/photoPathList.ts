@@ -1,11 +1,6 @@
-type pathList = {
-  path: string
-  alt: string
-}
-
 export const PathList: pathList[] = [
-  { path: '/images/skyShirtBoy.png', alt: 'skyShirtBoy' },
-  { path: '/images/jhonTechsonBordered.png', alt: 'jhonTechson' },
-  { path: '/images/sarahBordered.png', alt: 'sarahEthicist' },
-  { path: '/images/astronomerBordered.png', alt: 'astronomer' },
+  { id: 0, path: '/images/skyShirtBoy.png', alt: 'skyShirtBoy' },
+  { id: 1, path: '/images/jhonTechsonBordered.png', alt: 'jhonTechson' },
+  { id: 2, path: '/images/sarahBordered.png', alt: 'sarahEthicist' },
+  { id: 3, path: '/images/astronomerBordered.png', alt: 'astronomer' },
 ]
