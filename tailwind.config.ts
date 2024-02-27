@@ -55,9 +55,12 @@ const config: Config = {
       },
       fontSize: {
         '4.5xl': '40px',
+        '1.5xl': '22px',
+        '2.5px': '26px',
       },
       gap: {
         15: '60px',
+        7.5: '30px',
       },
     },
   },
