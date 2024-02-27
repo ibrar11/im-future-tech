@@ -12,6 +12,7 @@ export { default as PostContentItem } from '@/components/PostContentItem/PostCon
 export { default as PostInteractableItem } from '@/components/PostInteractableItem/PostInteractableItem'
 export { default as ResourceListItem } from '@/components/ResourceListItem/ResourceListItem'
 export { default as UsersPhotoList } from '@/components/UsersPhotoList/UsersPhotoList'
+export { default as DownloadMileStone } from '@/components/DownloadMileStone/DownloadMileStone'
 export { default as Button } from '@/components/Button'
 
 //sections
