@@ -6,7 +6,7 @@ type ResourceAuthorProps = {
   styles?: string
 }
 
-const ResourceAuthor = (props: ResourceAuthorProps) => {
+const ResourceDownload = (props: ResourceAuthorProps) => {
   const { styles = '' } = props
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-5 gap-y-5 rounded-xl border-[2px] border-solid border-dark-400 bg-dark-300 p-5 md:p-6 2xl:p-8">
@@ -29,4 +29,4 @@ const ResourceAuthor = (props: ResourceAuthorProps) => {
   )
 }
 
-export default ResourceAuthor
+export default ResourceDownload
