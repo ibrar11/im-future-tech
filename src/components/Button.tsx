@@ -15,7 +15,7 @@ const Button = (props: ButtonProps) => {
   const primaryButton = href ? (
     <Link
       href={href}
-      className={`flex cursor-pointer items-center justify-center rounded-xl border-2 border-solid border-dark-400 px-5 py-3.5 text-sm font-normal text-grey-300 hover:bg-dark-400 hover:text-grey-500 focus:bg-dark-500 focus:text-grey-600 active:bg-dark-300 active:text-grey-400 2xl:text-lg ${styles}`}
+      className={`flex w-max cursor-pointer items-center justify-center rounded-xl border-2 border-solid border-dark-400 px-5 py-3.5 text-sm font-normal text-grey-300 hover:bg-dark-400 hover:text-grey-500 focus:bg-dark-500 focus:text-grey-600 active:bg-dark-300 active:text-grey-400 2xl:text-lg ${styles}`}
     >
       {children && children}
       {icon && (
