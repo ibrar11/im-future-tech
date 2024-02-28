@@ -23,15 +23,7 @@ const ResourceItemDetails = (props: ResourceItemDetailsProps) => {
           {description}
         </p>
       </div>
-      {variant.length > 0 && (
-        <Button
-          icon={<Eye />}
-          text="Preview"
-          textStyles="text-grey-300"
-          styles="bg-dark-200 border-2 border-solid border-dark-400 gap-x-1"
-          iconStyles="p-0"
-        />
-      )}
+      {variant.length > 0 && <Button icon={<Eye />}>Preview</Button>}
     </div>
   )
 }
