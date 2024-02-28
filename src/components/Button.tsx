@@ -17,12 +17,16 @@ const Button = (props: ButtonProps) => {
     styles = '',
   } = props
   return (
-    <div
+    <button
       className={`flex items-center justify-center rounded-xl px-5 py-3.5 ${styles}`}
     >
       <p className={`text-sm font-normal 2xl:text-lg ${textStyles}`}>{text}</p>
-      <span className={`w-5 2xl:w-6 flex items-center justify-center p-[2px] ${iconStyles}`}>{icon}</span>
-    </div>
+      <span
+        className={`flex w-5 items-center justify-center p-[2px] 2xl:w-6 ${iconStyles}`}
+      >
+        {icon}
+      </span>
+    </button>
   )
 }
 
