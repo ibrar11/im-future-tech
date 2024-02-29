@@ -6,7 +6,7 @@ const StarRatingItem = () => {
   const stars = Array(5).fill(count++)
 
   return (
-    <div className="flex w-max items-center justify-center gap-x-1 rounded-full border-2 border-solid border-dark-400 px-3 py-2 2xl:gap-x-1.5 2xl:px-4 2xl:py-2.5">
+    <div className="z-10 flex w-max items-center justify-center gap-x-1 rounded-full border-2 border-solid border-dark-400 bg-dark-200 px-3 py-2 2xl:gap-x-1.5 2xl:px-4 2xl:py-2.5">
       {stars.map((item) => (
         <span
           key={item}
