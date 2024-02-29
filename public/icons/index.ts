@@ -11,4 +11,5 @@ export { default as EmptyChatBubble } from './regular/chatBubble/EmptyChatBubble
 export { default as Eye } from './regular/eyes/Eye.tsx';
 export { default as EmptyHeart } from './regular/heart/EmptyHeart.tsx';
 export { default as Heart } from './regular/heart/Heart.tsx';
+export { default as FilledStar } from './regular/stars/FilledStar.tsx';
 export { default as ShareIconTrinangle } from './regular/triangle/ShareIconTrinangle.tsx';

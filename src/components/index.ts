@@ -15,6 +15,7 @@ export { default as UsersPhotoList } from '@/components/UsersPhotoList/UsersPhot
 export { default as ResourceDescriptionItem } from '@/components/ResourceDescriptionItem/ResourceDescriptionItem'
 export { default as DownloadMileStone } from '@/components/DownloadMileStone/DownloadMileStone'
 export { default as ResourceItemDetails } from '@/components/ResourceItemDetails/ResourceItemDetails'
+export { default as StarRatingItem } from '@/components/StarRatingItem/StarRatingItem'
 export { default as Button } from '@/components/Button'
 
 //sections
