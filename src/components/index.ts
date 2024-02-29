@@ -1,8 +1,8 @@
 export { default as Container } from '@/components/Container'
 export { default as Divider } from '@/components/Divider'
-export { default as TopBanner } from '@/components/TopBanner'
-export { default as NavBar } from '@/components/NavBar'
-export { default as HamburgerIcon } from '@/components/HamburgerIcon'
+export { default as TopBanner } from '@/components/TopBanner/TopBanner'
+export { default as NavBar } from '@/components/NavBar/NavBar'
+export { default as HamburgerIcon } from '@/components/HamburgerIcon/HamburgerIcon'
 export { default as EndorsementItem } from '@/components/EdorsementItem/EndorsementItem'
 export { default as FeatureTitle } from '@/components/FeatureTitle/FeatureTitle'
 export { default as FeatureCard } from '@/components/FeatureCard/FeatureCard'
@@ -19,7 +19,7 @@ export { default as StarRatingItem } from '@/components/StarRatingItem/StarRatin
 export { default as FeedbackItem } from '@/components/FeedbackItem/FeedbackItem'
 export { default as InformationHubCard } from '@/components/InformationHubCard/InformationHubCard'
 export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
-export { default as Button } from '@/components/Button'
+export { default as Button } from '@/components/Button/Button'
 
 //sections
 export { default as Header } from '@/components/templates/Header'

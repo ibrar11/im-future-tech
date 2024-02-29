@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { DuoCircularBlade } from '@/icons'
-import { HamburgerIcon } from '.'
+import { HamburgerIcon } from '..'
 
 const NavBar = () => {
   const [dropDown, setDropDown] = useState(false)
