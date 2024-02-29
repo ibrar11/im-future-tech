@@ -21,8 +21,8 @@ const FooterListItem = (props: FooterListItemProps) => {
               {item.item}
             </p>
             {item.variant === 'withNewTag' && (
-              <div className="bg-gradient-border rounded-[4px] p-0.5">
-                <div className="rounded-[4px] bg-dark-300 px-2 py-0.5 text-sm font-normal text-white 2xl:text-lg">
+              <div className="bg-gradient-border rounded p-0.5">
+                <div className="rounded-sm bg-dark-300 px-2 py-0.5 text-sm font-normal text-white 2xl:text-lg">
                   New
                 </div>
               </div>
