@@ -64,6 +64,9 @@ const config: Config = {
         15: '60px',
         7.5: '30px',
       },
+      borderRadius: {
+        '2lg': '10px',
+      },
     },
   },
   plugins: [],

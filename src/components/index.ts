@@ -16,6 +16,7 @@ export { default as ResourceDescriptionItem } from '@/components/ResourceDescrip
 export { default as DownloadMileStone } from '@/components/DownloadMileStone/DownloadMileStone'
 export { default as ResourceItemDetails } from '@/components/ResourceItemDetails/ResourceItemDetails'
 export { default as StarRatingItem } from '@/components/StarRatingItem/StarRatingItem'
+export { default as FeedbackItem } from '@/components/FeedbackItem/FeedbackItem'
 export { default as Button } from '@/components/Button'
 
 //sections
