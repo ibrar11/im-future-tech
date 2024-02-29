@@ -18,6 +18,7 @@ export { default as ResourceItemDetails } from '@/components/ResourceItemDetails
 export { default as StarRatingItem } from '@/components/StarRatingItem/StarRatingItem'
 export { default as FeedbackItem } from '@/components/FeedbackItem/FeedbackItem'
 export { default as InformationHubCard } from '@/components/InformationHubCard/InformationHubCard'
+export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
 export { default as Button } from '@/components/Button'
 
 //sections
