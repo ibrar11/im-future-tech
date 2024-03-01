@@ -1,17 +1,15 @@
-import React from "react";
-import { Container, TopBanner, NavBar } from "..";
+import React from 'react'
+import { TopBanner, NavBar } from '..'
 
 const Header = () => {
   return (
-    <header>
-      <Container>
-        <div className="flex flex-col gap-y">
-          <TopBanner />
-          <NavBar />
-        </div>
-      </Container>
+    <header className="sticky top-0 z-20">
+      <div className="gap-y flex flex-col">
+        <TopBanner />
+        <NavBar />
+      </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
