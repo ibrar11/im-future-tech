@@ -11,6 +11,8 @@ const config: Config = {
       backgroundImage: {
         'gradient-border':
           'linear-gradient(to top right, #262626 60%, #554C29)',
+        'nav-gradient':
+          'linear-gradient(to bottom right, #141414,#1A1A1A,#262626,#333333)',
       },
       maxWidth: {
         container: '1320px',
