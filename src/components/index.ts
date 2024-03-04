@@ -24,3 +24,4 @@ export { default as Button } from '@/components/Button/Button'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
+export { default as HeroSection } from '@/components/templates/HeroSection'
