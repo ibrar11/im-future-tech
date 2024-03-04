@@ -1,16 +1,16 @@
-import React from "react";
-import { ArrowUpRight } from "@/icons";
+import React from 'react'
+import { ArrowUpRight } from '@/icons'
 
 interface BenefitsListItemProps {
-  icon: React.ReactNode;
-  title: string;
-  subHeading: string;
-  description: string;
-  styles?: string;
+  icon: React.ReactNode
+  title: string
+  subHeading: string
+  description: string
+  styles?: string
 }
 
 const AchievementCard = (props: BenefitsListItemProps) => {
-  const { icon, title, subHeading, description, styles } = props;
+  const { icon, title, subHeading, description, styles } = props
 
   return (
     <div className={`flex items-center justify-between ${styles}`}>
@@ -32,7 +32,7 @@ const AchievementCard = (props: BenefitsListItemProps) => {
         <ArrowUpRight color="black" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AchievementCard;
+export default AchievementCard
