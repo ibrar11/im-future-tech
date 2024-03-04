@@ -1,4 +1,8 @@
-import { HeroSection, AchievementSection } from '@/components'
+import {
+  HeroSection,
+  AchievementSection,
+  FeaturesHeaderSection,
+} from '@/components'
 import React from 'react'
 
 export default function Home() {
@@ -6,6 +10,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AchievementSection />
+      <FeaturesHeaderSection />
     </main>
   )
 }

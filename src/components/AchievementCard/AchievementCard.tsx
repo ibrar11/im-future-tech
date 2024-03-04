@@ -24,7 +24,7 @@ const AchievementCard = (props: BenefitsListItemProps) => {
             {subHeading}
           </p>
         </div>
-        <p className="text-sm font-normal text-grey-300 md:text-base 2xl:text-lg">
+        <p className="kumbh-font text-sm font-normal text-grey-300 md:text-base 2xl:text-lg">
           {description}
         </p>
       </div>
