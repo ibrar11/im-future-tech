@@ -4,7 +4,7 @@ import { TopBanner, NavBar } from '..'
 const Header = () => {
   return (
     <header className="sticky top-0 z-20">
-      <div className="gap-y flex flex-col">
+      <div className="flex flex-col">
         <TopBanner />
         <NavBar />
       </div>
