@@ -3,7 +3,7 @@ import React from 'react'
 type FeatureCardProps = {
   title: string
   description: string
-  styles: string
+  styles?: string
 }
 
 const FeatureCard = (props: FeatureCardProps) => {
