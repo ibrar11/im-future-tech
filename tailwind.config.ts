@@ -18,6 +18,8 @@ const config: Config = {
       maxWidth: {
         container: '1320px',
         'desktop-container': '1626px',
+        '7/10': '70%',
+        '4/5': '80%',
       },
       colors: {
         yellow: {
@@ -62,8 +64,11 @@ const config: Config = {
         13: '52px',
         15: '60px',
         12.5: '50px',
+        38: '152px',
         '13/20': '65%',
         '7/20': '35%',
+        '7/10': '70%',
+        '3/10': '30%',
         90: '360px',
       },
       fontSize: {
@@ -82,6 +87,7 @@ const config: Config = {
         '2lg': '10px',
       },
       padding: {
+        '4.5': '18px',
         '12.5': '50px',
         '25': '100px',
         '37.5': '150px',

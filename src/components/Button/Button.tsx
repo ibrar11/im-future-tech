@@ -14,6 +14,7 @@ type ButtonProps = {
   onClick?: (...args: any[]) => unknown
   children?: string | React.ReactNode
   border?: boolean
+  styles?: string
 }
 
 const Button = (props: ButtonProps) => {
@@ -43,7 +44,7 @@ const Button = (props: ButtonProps) => {
     : tw`${!href || pathname === href ? 'border-2 border-yellow-200 text-dark-500' : 'text-dark-200'} bg-yellow-200 hover:bg-yellow-300 hover:text-dark-400 focus:text-dark-500 focus:ring focus:ring-yellow-500 active:bg-yellow-300 active:text-dark-300`
 
   const btnVariant = variant === 'Secondary' ? secondayButton : primaryButton
-  const iconColor = props.variant === 'Secondary' ? '#FFD11A' : '#141414'
+  const iconColor = variant === 'Primary' ? '#FFD11A' : '#141414'
 
   const buttonProps = {
     className: tw`flex items-center justify-center rounded-md px-5 py-3.5 text-sm font-normal outline-none transition-all 2xl:text-lg ${btnVariant} ${fullWidth ? 'w-full' : ''}`,

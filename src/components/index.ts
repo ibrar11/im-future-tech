@@ -22,7 +22,6 @@ export { default as InformationHubCard } from '@/components/InformationHubCard/I
 export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
 export { default as Button } from '@/components/Button/Button'
 export { default as SectionsHeader } from '@/components/SectionsHeader/SectionsHeader'
-export { default as BlogPostHeader } from '@/components/BlogPostHeader/BlogPostHeader'
 
 //sections
 export { default as Header } from '@/components/templates/Header'

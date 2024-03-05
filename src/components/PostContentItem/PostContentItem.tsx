@@ -20,7 +20,7 @@ const PostContentItem = (props: PostContentItemProps) => {
         <p className="md:text-1.5xl 2xl:text-2.5xl text-lg font-semibold text-white">
           {title}
         </p>
-        <p className="text-sm font-normal text-grey-300 md:text-base 2xl:text-lg">
+        <p className="text-sm font-normal text-grey-300 2xl:text-lg">
           {description}
         </p>
       </div>
