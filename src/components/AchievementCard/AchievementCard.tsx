@@ -1,5 +1,6 @@
 import React from 'react'
 import { ArrowUpRight } from '@/icons'
+import Link from 'next/link'
 
 interface BenefitsListItemProps {
   icon: React.ReactNode
@@ -28,9 +29,12 @@ const AchievementCard = (props: BenefitsListItemProps) => {
           {description}
         </p>
       </div>
-      <div className="2xl:w-13 2xl:h-13 right-0 top-[40%] flex h-10 w-10 items-center justify-center rounded-full bg-yellow-200 p-3 md:h-11 md:w-11">
+      <Link
+        href={'/'}
+        className="2xl:w-13 2xl:h-13 right-0 top-[40%] flex h-10 w-10 items-center justify-center rounded-full bg-yellow-200 p-3 md:h-11 md:w-11"
+      >
         <ArrowUpRight color="black" />
-      </div>
+      </Link>
     </div>
   )
 }
