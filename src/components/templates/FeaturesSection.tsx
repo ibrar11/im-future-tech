@@ -7,8 +7,10 @@ const FeaturesSection = () => {
     <section>
       <Container>
         <div>
-          {features.map((item) => (
-            <div className="flex flex-col items-center sm:flex-row sm:border-b-2 sm:border-dark-400">
+          {features.map((item, index) => (
+            <div
+              className={`flex flex-col items-center sm:flex-row sm:border-dark-400 ${index === features.length - 1 ? '' : 'sm:border-b-2'}`}
+            >
               <FeatureTitle
                 key={item.id}
                 title={item.title}
@@ -16,7 +18,9 @@ const FeaturesSection = () => {
                 icon={item.icon}
                 styles="sm:w-7/20 pr-15"
               />
-              <div className="sm:w-13/20 sm:py-15 sm:pl-15 flex flex-col gap-y-2.5 border-y-2 border-dark-400 px-4 py-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-5 sm:border-y-0 sm:border-l-2 sm:pr-0">
+              <div
+                className={`sm:w-13/20 sm:py-15 sm:pl-15 flex flex-col gap-y-2.5 border-dark-400 px-4 py-8 sm:grid sm:grid-cols-2 sm:gap-x-5 sm:gap-y-5 sm:border-y-0 sm:border-l-2 sm:pr-0  ${index === features.length - 1 ? 'border-t-2' : 'border-y-2'}`}
+              >
                 {item.features.map((feature) => (
                   <FeatureCard
                     key={feature.id}
