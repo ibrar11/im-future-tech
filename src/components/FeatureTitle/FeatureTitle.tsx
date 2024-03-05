@@ -2,12 +2,15 @@ type FeatureTitleProps = {
   icon: React.ReactNode
   title: string
   description: string
+  styles?: string
 }
 
 const FeatureTitle = (props: FeatureTitleProps) => {
-  const { icon, title, description } = props
+  const { icon, title, description, styles } = props
   return (
-    <div className="2xl:gap-y-15 flex flex-col gap-y-5 py-12 md:gap-y-10">
+    <div
+      className={`2xl:gap-y-15 flex flex-col gap-y-5 py-12 md:gap-y-10 ${styles}`}
+    >
       <span className="md:w-15 md:h-15 flex size-10 items-center justify-start 2xl:size-20">
         {icon}
       </span>
