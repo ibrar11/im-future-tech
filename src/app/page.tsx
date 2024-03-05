@@ -1,7 +1,6 @@
 import {
   HeroSection,
   AchievementSection,
-  FeaturesHeaderSection,
   FeaturesSection,
   BlogPostSection,
 } from '@/components'
@@ -12,7 +11,6 @@ export default function Home() {
     <main>
       <HeroSection />
       <AchievementSection />
-      <FeaturesHeaderSection />
       <FeaturesSection />
       <BlogPostSection />
     </main>

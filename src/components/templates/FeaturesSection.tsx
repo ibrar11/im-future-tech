@@ -1,10 +1,20 @@
 import React from 'react'
-import { Container, Divider, FeatureCard, FeatureTitle } from '..'
+import {
+  Container,
+  Divider,
+  FeatureCard,
+  FeatureTitle,
+  SectionsHeader,
+} from '..'
 import { features } from '../FeatureTitle/featuresData'
 
 const FeaturesSection = () => {
   return (
     <section>
+      <SectionsHeader
+        titleTag="Unlock the Power of"
+        title="FutureTech Features"
+      />
       <Container>
         <div>
           {features.map((item, index) => (
