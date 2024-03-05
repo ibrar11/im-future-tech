@@ -21,10 +21,10 @@ export { default as FeedbackItem } from '@/components/FeedbackItem/FeedbackItem'
 export { default as InformationHubCard } from '@/components/InformationHubCard/InformationHubCard'
 export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
 export { default as Button } from '@/components/Button/Button'
+export { default as SectionsHeader } from '@/components/SectionsHeader/SectionsHeader'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
 export { default as HeroSection } from '@/components/templates/HeroSection'
 export { default as AchievementSection } from '@/components/templates/AchievementSection'
-export { default as FeaturesHeaderSection } from '@/components/templates/FeaturesHeaderSection'
 export { default as FeaturesSection } from '@/components/templates/FeaturesSection'
