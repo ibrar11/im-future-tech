@@ -5,6 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { Pagination } from 'swiper/modules'
 import { PostTabs } from './PostContentItem/postContentList'
+import { Button } from '.'
 
 type SliderProps = {
   tabs?: PostTabs[]
@@ -26,16 +27,18 @@ const Slider = (props: SliderProps) => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {tabs.map((tab, index) => (
+        {tabs.map((tab) => (
           <SwiperSlide
             key={tab.id}
             onClick={() => setState && setState(tab.id)}
           >
-            <div
-              className={`w-38 py-4.5 flex cursor-pointer items-center justify-center rounded-md border-2 border-dark-400 text-sm font-normal ${index + 1 === state ? 'text-white' : 'text-grey-300'} transition-all hover:bg-dark-400 hover:text-grey-500 focus:text-grey-600 focus:ring focus:ring-dark-700 active:bg-dark-300 active:text-grey-400 2xl:text-lg`}
+            <Button
+              active={tab.id === state ? true : false}
+              onClick={() => setState && setState(tab.id)}
+              styles="min-w-38 2xl:px-16 md:px-12.5 py-5 2xl:py-7.5 md:py-6"
             >
               {tab.tab}
-            </div>
+            </Button>
           </SwiperSlide>
         ))}
       </Swiper>
