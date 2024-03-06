@@ -6,7 +6,11 @@ import { postList, tabs } from '../PostContentItem/postContentList'
 import Slider from '../Slider'
 
 const BlogPostSection = () => {
-  const [isActive, setIsActive] = useState(1)
+  const [active, setActive] = useState(1)
+
+  const handleActive = (number: number): void => {
+    setActive(number)
+  }
 
   return (
     <section>
@@ -18,14 +22,15 @@ const BlogPostSection = () => {
         linkText="View All Blogs"
       />
       <Container>
-        <div className="">
-          <div className="py-5 lg:flex lg:justify-center">
-            <Slider tabs={tabs} state={isActive} setState={setIsActive} />
+        <div>
+          <div className="lg:flex lg:justify-center">
+            <Slider tabs={tabs} state={active} setState={handleActive} />
           </div>
           <div>
-            {postList.map((post) => (
-              <BlogPost post={post} key={post.id} />
-            ))}
+            {postList.map(
+              (post) =>
+                (4 - post.id) >= active && <BlogPost post={post} key={post.id} />,
+            )}
           </div>
         </div>
       </Container>
