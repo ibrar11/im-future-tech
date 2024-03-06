@@ -30,7 +30,7 @@ const Links = (props: NavLinksProps) => {
           ))}
         </ul>
       </div>
-      {dropDown && <Button variant="Secondary">Contact Us</Button>}
+      {dropDown && <Button variant="secondary">Contact Us</Button>}
     </div>
   )
 }
