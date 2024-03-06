@@ -1,17 +1,17 @@
 import React from 'react'
-import { Button, Container } from '..'
+import { Badge, Button, Container } from '..'
 
 type SectionsHeaderProps = {
-  titleTag: string
+  badgeTitle: string
   title: string
   variant?: 'primary' | 'secondary'
   linkText?: string
   icon?: React.ReactNode
 }
 
-const SectionsHeader = (props: SectionsHeaderProps) => {
+const SectionHeader = (props: SectionsHeaderProps) => {
   const {
-    titleTag = '',
+    badgeTitle = '',
     title = '',
     variant = 'primary',
     linkText,
@@ -22,9 +22,7 @@ const SectionsHeader = (props: SectionsHeaderProps) => {
       <Container>
         <div className="flex flex-col justify-between gap-y-8 py-10 sm:flex-row sm:items-center md:py-20">
           <div className="flex flex-col gap-y-2.5 2xl:gap-y-4 2xl:py-32">
-            <p className="w-max rounded bg-dark-500 px-2 py-1 text-sm font-normal text-white md:text-base 2xl:px-2.5 2xl:py-1.5 2xl:text-lg">
-              {titleTag}
-            </p>
+            <Badge badgeTitle={badgeTitle} />
             <h3 className="kumbh-font text-3xl font-medium text-white lg:text-4xl 2xl:text-6xl">
               {title}
             </h3>
@@ -45,4 +43,4 @@ const SectionsHeader = (props: SectionsHeaderProps) => {
   )
 }
 
-export default SectionsHeader
+export default SectionHeader

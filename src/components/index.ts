@@ -21,8 +21,9 @@ export { default as FeedbackItem } from '@/components/FeedbackItem/FeedbackItem'
 export { default as InformationHubCard } from '@/components/InformationHubCard/InformationHubCard'
 export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
 export { default as Button } from '@/components/Button/Button'
-export { default as SectionsHeader } from '@/components/SectionsHeader/SectionsHeader'
+export { default as SectionHeader } from '@/components/SectionHeader/SectionHeader'
 export { default as BlogPost } from '@/components/BlogPost/BlogPost'
+export { default as Badge } from '@/components/Badge/Badge'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
