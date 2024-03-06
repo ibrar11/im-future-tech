@@ -4,15 +4,15 @@ import {
   Divider,
   FeatureCard,
   FeatureTitle,
-  SectionsHeader,
+  SectionHeader,
 } from '..'
 import { features } from '../FeatureTitle/featuresData'
 
 const FeaturesSection = () => {
   return (
     <section>
-      <SectionsHeader
-        titleTag="Unlock the Power of"
+      <SectionHeader
+        badgeTitle="Unlock the Power of"
         title="FutureTech Features"
         variant="secondary"
       />

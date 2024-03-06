@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { BlogPost, Container, SectionsHeader } from '..'
+import { BlogPost, Container, SectionHeader } from '..'
 import { ArrowUpRight } from '@/icons'
 import { postList, tabs } from '../PostContentItem/postContentList'
 import Slider from '../Slider'
@@ -14,9 +14,9 @@ const BlogPostSection = () => {
 
   return (
     <section>
-      <SectionsHeader
+      <SectionHeader
         title="Explore FutureTech's In-Depth Blog Posts"
-        titleTag="A Knowledge Treasure Trove"
+        badgeTitle="A Knowledge Treasure Trove"
         variant="primary"
         icon={<ArrowUpRight color="#FFD11A" />}
         linkText="View All Blogs"
