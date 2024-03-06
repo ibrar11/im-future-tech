@@ -3,10 +3,10 @@ import React from 'react'
 
 type PostInteractableItemProps = {
   icon: React.ReactNode
-  number: string
+  number: number
 }
 
-const PostInteractableItem = (props: PostInteractableItemProps) => {
+const InteractionBtn = (props: PostInteractableItemProps) => {
   const { number, icon } = props
 
   return (
@@ -14,9 +14,14 @@ const PostInteractableItem = (props: PostInteractableItemProps) => {
       <span className="flex size-5 items-center justify-center 2xl:size-6">
         {icon}
       </span>
-      <p className="text-sm font-normal text-grey-300 2xl:text-lg">{number}</p>
+      <p className="text-sm font-normal text-grey-300 2xl:text-lg">
+        {Intl.NumberFormat('en-US', {
+          notation: 'compact',
+          maximumFractionDigits: 1,
+        }).format(number)}
+      </p>
     </button>
   )
 }
 
-export default PostInteractableItem
+export default InteractionBtn

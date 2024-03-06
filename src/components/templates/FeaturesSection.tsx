@@ -14,6 +14,7 @@ const FeaturesSection = () => {
       <SectionsHeader
         titleTag="Unlock the Power of"
         title="FutureTech Features"
+        variant='secondary'
       />
       <Container>
         <div>

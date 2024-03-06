@@ -10,7 +10,7 @@ export { default as FeatureCard } from '@/components/FeatureCard/FeatureCard'
 export { default as AchievementCard } from '@/components/AchievementCard/AchievementCard'
 export { default as ListItem } from '@/components/ListItem/ListItem'
 export { default as PostContentItem } from '@/components/PostContentItem/PostContentItem'
-export { default as PostInteractableItem } from '@/components/PostInteractableItem/PostInteractableItem'
+export { default as InteractionBtn } from '@/components/InteractionBtn/InteractionBtn'
 export { default as ResourceListItem } from '@/components/ResourceListItem/ResourceListItem'
 export { default as UsersPhotoList } from '@/components/UsersPhotoList/UsersPhotoList'
 export { default as ResourceDescriptionItem } from '@/components/ResourceDescriptionItem/ResourceDescriptionItem'
@@ -22,6 +22,7 @@ export { default as InformationHubCard } from '@/components/InformationHubCard/I
 export { default as FooterListItem } from '@/components/FooterListItem/FooterListItem'
 export { default as Button } from '@/components/Button/Button'
 export { default as SectionsHeader } from '@/components/SectionsHeader/SectionsHeader'
+export { default as BlogPost } from '@/components/BlogPost/BlogPost'
 
 //sections
 export { default as Header } from '@/components/templates/Header'

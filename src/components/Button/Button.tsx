@@ -6,7 +6,7 @@ import { tw } from '@/utils/Tw'
 type ButtonProps = {
   icon?: React.ReactNode
   iconStyle?: string
-  variant?: string
+  variant?: 'primary' | 'secondary'
   pathname?: string
   href?: string
   fullWidth?: boolean
@@ -21,7 +21,7 @@ const Button = (props: ButtonProps) => {
   const {
     icon,
     iconStyle,
-    variant = 'Primary',
+    variant = 'primary',
     pathname,
     children,
     href,
@@ -43,8 +43,8 @@ const Button = (props: ButtonProps) => {
     ? tw`cursor-not-allowed border-2 border-yellow-500 bg-yellow-500 text-dark-500 focus:ring-0`
     : tw`${!href || pathname === href ? 'border-2 border-yellow-200 text-dark-500' : 'text-dark-200'} bg-yellow-200 hover:bg-yellow-300 hover:text-dark-400 focus:text-dark-500 focus:ring focus:ring-yellow-500 active:bg-yellow-300 active:text-dark-300`
 
-  const btnVariant = variant === 'Secondary' ? secondayButton : primaryButton
-  const iconColor = variant === 'Primary' ? '#FFD11A' : '#141414'
+  const btnVariant = variant === 'secondary' ? secondayButton : primaryButton
+  const iconColor = variant === 'primary' ? '#FFD11A' : '#141414'
 
   const buttonProps = {
     className: tw`flex items-center justify-center rounded-md px-5 py-3.5 text-sm font-normal outline-none transition-all 2xl:text-lg ${btnVariant} ${fullWidth ? 'w-full' : ''}`,

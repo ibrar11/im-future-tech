@@ -48,7 +48,7 @@ const NavBar = () => {
             handleDropDown={handleDropDown}
           />
           <Links dropDown={dropDown} links={links} pathname={pathname} />
-          {btnDisplay && <Button variant="Secondary">Contact Us</Button>}
+          {btnDisplay && <Button variant="secondary">Contact Us</Button>}
         </div>
       </Container>
     </nav>

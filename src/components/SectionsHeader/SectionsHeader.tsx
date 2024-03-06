@@ -4,13 +4,19 @@ import { Button, Container } from '..'
 type SectionsHeaderProps = {
   titleTag: string
   title: string
-  variant?: string
+  variant?: 'primary' | 'secondary'
   linkText?: string
   icon?: React.ReactNode
 }
 
 const SectionsHeader = (props: SectionsHeaderProps) => {
-  const { titleTag = '', title = '', variant, linkText, icon } = props
+  const {
+    titleTag = '',
+    title = '',
+    variant = 'primary',
+    linkText,
+    icon,
+  } = props
   return (
     <div className="border-y-2 border-dark-400 bg-dark-300">
       <Container>
@@ -23,7 +29,7 @@ const SectionsHeader = (props: SectionsHeaderProps) => {
               {title}
             </h3>
           </div>
-          {variant && (
+          {variant === 'primary' && (
             <Button
               icon={icon}
               href="/"
