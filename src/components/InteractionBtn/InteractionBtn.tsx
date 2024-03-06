@@ -1,4 +1,4 @@
-import { Heart } from '@/icons'
+import { abbreviatedNumber } from '@/utils/AbbreviatedNumber'
 import React from 'react'
 
 type PostInteractableItemProps = {
@@ -15,10 +15,7 @@ const InteractionBtn = (props: PostInteractableItemProps) => {
         {icon}
       </span>
       <p className="text-sm font-normal text-grey-300 2xl:text-lg">
-        {Intl.NumberFormat('en-US', {
-          notation: 'compact',
-          maximumFractionDigits: 1,
-        }).format(number)}
+        {abbreviatedNumber(number)}
       </p>
     </button>
   )
