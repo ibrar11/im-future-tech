@@ -2,6 +2,7 @@ import {
   HeroSection,
   AchievementSection,
   FeaturesSection,
+  BlogPostSection,
 } from '@/components'
 import React from 'react'
 
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <AchievementSection />
       <FeaturesSection />
+      <BlogPostSection />
     </main>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 type ListItemProps = {
-  styles: string
+  styles?: string
   title: string
   description: string
   path: string

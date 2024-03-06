@@ -15,3 +15,11 @@
     font-family: 'Kumbh Sans', sans-serif;
   }
 }
+
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+.swiper-slide {
+  width: max-content !important;
+}
