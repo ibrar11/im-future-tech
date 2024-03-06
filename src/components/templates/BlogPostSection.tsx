@@ -24,7 +24,7 @@ const BlogPostSection = () => {
           </div>
           <div>
             {postList.map((post) => (
-              <BlogPost post={post} />
+              <BlogPost post={post} key={post.id} />
             ))}
           </div>
         </div>
