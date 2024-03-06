@@ -1,31 +1,36 @@
 'use client'
 import React, { useState } from 'react'
-import { BlogPost, Container, SectionsHeader } from '..'
+import { BlogPost, Container, SectionHeader } from '..'
 import { ArrowUpRight } from '@/icons'
 import { postList, tabs } from '../PostContentItem/postContentList'
 import Slider from '../Slider'
 
 const BlogPostSection = () => {
-  const [isActive, setIsActive] = useState(1)
+  const [active, setActive] = useState(1)
+
+  const handleActive = (number: number): void => {
+    setActive(number)
+  }
 
   return (
     <section>
-      <SectionsHeader
+      <SectionHeader
         title="Explore FutureTech's In-Depth Blog Posts"
-        titleTag="A Knowledge Treasure Trove"
+        badgeTitle="A Knowledge Treasure Trove"
         variant="primary"
         icon={<ArrowUpRight color="#FFD11A" />}
         linkText="View All Blogs"
       />
       <Container>
-        <div className="">
-          <div className="py-5 lg:flex lg:justify-center">
-            <Slider tabs={tabs} state={isActive} setState={setIsActive} />
+        <div>
+          <div className="lg:flex lg:justify-center">
+            <Slider tabs={tabs} state={active} setState={handleActive} />
           </div>
           <div>
-            {postList.map((post) => (
-              <BlogPost post={post} key={post.id} />
-            ))}
+            {postList.map(
+              (post) =>
+                (4 - post.id) >= active && <BlogPost post={post} key={post.id} />,
+            )}
           </div>
         </div>
       </Container>

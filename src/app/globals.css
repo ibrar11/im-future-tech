@@ -23,3 +23,11 @@
 .swiper-slide {
   width: max-content !important;
 }
+
+.swiper-wrapper {
+  padding: 20px 5px;
+}
+
+.swiper {
+  padding-right: 20px !important;
+}

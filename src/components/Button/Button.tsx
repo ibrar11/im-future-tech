@@ -15,6 +15,7 @@ type ButtonProps = {
   children?: string | React.ReactNode
   border?: boolean
   styles?: string
+  active?: true | false
 }
 
 const Button = (props: ButtonProps) => {
@@ -28,12 +29,13 @@ const Button = (props: ButtonProps) => {
     fullWidth,
     disabled,
     onClick,
-    border,
+    styles,
+    active = false,
   } = props
 
   const btnDisabled = href?.length && disabled ? false : disabled ? true : false
 
-  const primaryBtnBorder = tw`${!pathname ? 'border-2 border-dark-400 bg-dark-200 text-grey-300' : pathname === href ? 'border-2 border-dark-400 bg-dark-200 text-white' : 'text-grey-300'}`
+  const primaryBtnBorder = tw`${!pathname ? `border-2 border-dark-400 bg-dark-200 ${active ? 'text-white' : 'text-grey-300'}` : pathname === href ? 'border-2 border-dark-400 bg-dark-200 text-white' : 'text-grey-300'}`
 
   const primaryButton = btnDisabled
     ? tw`cursor-not-allowed border-2 border-dark-500 bg-dark-500 text-grey-500 focus:ring-0`
@@ -47,7 +49,7 @@ const Button = (props: ButtonProps) => {
   const iconColor = variant === 'primary' ? '#FFD11A' : '#141414'
 
   const buttonProps = {
-    className: tw`flex items-center justify-center rounded-md px-5 py-3.5 text-sm font-normal outline-none transition-all 2xl:text-lg ${btnVariant} ${fullWidth ? 'w-full' : ''}`,
+    className: tw`flex items-center justify-center rounded-md px-5 py-3.5 text-sm font-normal outline-none transition-all 2xl:text-lg ${btnVariant} ${fullWidth ? 'w-full' : ''} ${styles}`,
     'aria-disabled': btnDisabled ? true : undefined,
     'aria-label': children,
     onClick: onClick,
