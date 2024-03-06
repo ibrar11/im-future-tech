@@ -20,6 +20,7 @@ const config: Config = {
         'desktop-container': '1626px',
         '7/10': '70%',
         '4/5': '80%',
+        '9/10': '90%',
       },
       colors: {
         yellow: {

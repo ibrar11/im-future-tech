@@ -11,8 +11,8 @@ type PostContentItemProps = {
 const PostContentItem = (props: PostContentItemProps) => {
   const { post, styles = '' } = props
   return (
-    <div className="md:w-7/10 justify-between md:flex lg:w-3/4">
-      <div className="2xl:gap-y-7.5 md:max-w-7/10 xl:max-w-4/5 flex flex-col items-start gap-y-5 md:gap-y-6">
+    <div className="md:w-7/10 justify-between md:flex lg:w-3/4 xl:w-4/5">
+      <div className="2xl:gap-y-7.5 md:max-w-7/10 lg:max-w-4/5 xl:max-w-9/10 flex flex-col items-start gap-y-5 md:gap-y-6">
         <div
           className={`2xl:gap-y-7.5 flex flex-col items-start justify-between gap-y-5 md:gap-y-6 ${styles}`}
         >
@@ -23,7 +23,7 @@ const PostContentItem = (props: PostContentItemProps) => {
             <p className="md:text-1.5xl 2xl:text-2.5xl text-lg font-semibold text-white">
               {post?.title}
             </p>
-            <p className="text-sm font-normal text-grey-300 2xl:text-lg">
+            <p className="text-sm font-normal text-grey-300 xl:text-base 2xl:text-lg">
               {post?.description}
             </p>
           </div>
