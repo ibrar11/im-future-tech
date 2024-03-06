@@ -14,16 +14,16 @@ const FeaturesSection = () => {
       <SectionsHeader
         titleTag="Unlock the Power of"
         title="FutureTech Features"
-        variant='secondary'
+        variant="secondary"
       />
       <Container>
         <div>
           {features.map((item, index) => (
             <div
+              key={item.id}
               className={`flex flex-col items-center sm:flex-row sm:border-dark-400 ${index === features.length - 1 ? '' : 'sm:border-b-2'}`}
             >
               <FeatureTitle
-                key={item.id}
                 title={item.title}
                 description={item.description}
                 icon={item.icon}
