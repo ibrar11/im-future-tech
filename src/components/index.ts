@@ -24,6 +24,9 @@ export { default as Button } from '@/components/Button/Button'
 export { default as SectionHeader } from '@/components/SectionHeader/SectionHeader'
 export { default as BlogPost } from '@/components/BlogPost/BlogPost'
 export { default as Badge } from '@/components/Badge/Badge'
+export { default as ResourceList } from '@/components/ResourceList/ResourceList'
+export { default as ResourceTitle } from '@/components/ResourceTitle/ResourceTitle'
+export { default as ResourceCard } from '@/components/ResourceCard/ResourceCard'
 
 //sections
 export { default as Header } from '@/components/templates/Header'

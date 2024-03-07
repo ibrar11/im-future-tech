@@ -3,6 +3,7 @@ import {
   AchievementSection,
   FeaturesSection,
   BlogPostSection,
+  ResourcesSection,
 } from '@/components'
 import React from 'react'
 
@@ -13,6 +14,7 @@ export default function Home() {
       <AchievementSection />
       <FeaturesSection />
       <BlogPostSection />
+      <ResourcesSection />
     </main>
   )
 }

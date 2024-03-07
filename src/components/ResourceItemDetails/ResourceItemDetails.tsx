@@ -6,7 +6,7 @@ type ResourceItemDetailsProps = {
   styles?: string
   title: string
   description: string
-  variant?: string
+  variant?: 'preview' | ''
 }
 
 const ResourceItemDetails = (props: ResourceItemDetailsProps) => {
@@ -23,7 +23,7 @@ const ResourceItemDetails = (props: ResourceItemDetailsProps) => {
           {description}
         </p>
       </div>
-      {variant.length > 0 && <Button icon={<Eye />}>Preview</Button>}
+      {variant === 'preview' && <Button icon={<Eye />}>Preview</Button>}
     </div>
   )
 }

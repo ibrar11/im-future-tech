@@ -77,7 +77,7 @@ const config: Config = {
       fontSize: {
         '4.5xl': '40px',
         '1.5xl': '22px',
-        '2.5px': '26px',
+        '2.5xl': '27px',
         '7xl': '70px',
         '5.5xl': '54px',
       },
