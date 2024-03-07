@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, Container, EndorsementItem, UsersPhotoList } from '..'
 import { items } from '../EdorsementItem/endorsementList'
-import { PathList } from '../DownloadMileStone/photoPathList'
+import { PathList } from '../UsersPhotoList/photoPathList'
 import { ArrowUpRight } from '@/icons'
 
 const HeroSection = () => {

@@ -26,8 +26,8 @@ const ResourceDescriptionItem = (props: ResourceDescriptionItemProps) => {
           {description}
         </p>
       </div>
-      <span className="w-full sm:w-auto">
-        <img src={path} alt={alt} className="w-full rounded-lg" />
+      <span className="w-full">
+        <img src={path} alt={alt} className="w-full rounded-lg object-cover" />
       </span>
     </div>
   )
