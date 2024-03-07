@@ -21,7 +21,7 @@ const SectionHeader = (props: SectionsHeaderProps) => {
     <div className="border-y-2 border-dark-400 bg-dark-300">
       <Container>
         <div className="flex flex-col justify-between gap-y-8 py-10 sm:flex-row sm:items-center md:py-20">
-          <div className="flex flex-col gap-y-2.5 2xl:gap-y-4 2xl:py-32">
+          <div className="sm:w-7/10 flex flex-col gap-y-2.5 2xl:gap-y-4 2xl:py-32">
             <Badge badgeTitle={badgeTitle} />
             <h3 className="kumbh-font text-2.5xl font-medium text-white lg:text-4xl 2xl:text-6xl">
               {title}
