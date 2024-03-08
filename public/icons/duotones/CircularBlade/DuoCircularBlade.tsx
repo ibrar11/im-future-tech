@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const CircularBlade = ({ size = "35", color = "#fff" }: iconProps) => {
+const DuoCircularBlade = ({ size = '35', color = '#fff' }: iconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ const CircularBlade = ({ size = "35", color = "#fff" }: iconProps) => {
         d="M33.333 50.5v-8.333a8.322 8.322 0 008.334-8.334H50C50 43.056 42.528 50.5 33.333 50.5zM33.333 50.5v-8.333A8.322 8.322 0 0125 33.833h-8.333c0 9.223 7.472 16.667 16.666 16.667zM0 33.833h8.333a8.322 8.322 0 008.334 8.334V50.5C7.472 50.5 0 43.056 0 33.833zM0 33.833h8.333a8.322 8.322 0 018.334-8.333v-8.333C7.472 17.167 0 24.639 0 33.833zM16.667.5v8.333a8.322 8.322 0 00-8.334 8.334H0C0 7.972 7.472.5 16.667.5zM16.667.5v8.333A8.322 8.322 0 0125 17.167h8.333C33.333 7.972 25.861.5 16.667.5zM50 17.167h-8.333a8.322 8.322 0 00-8.334-8.334V.5C42.528.5 50 7.972 50 17.167zM50 17.167h-8.333a8.322 8.322 0 01-8.334 8.333v8.333C42.528 33.833 50 26.39 50 17.167z"
       ></path>
     </svg>
-  );
-};
+  )
+}
 
-export default CircularBlade;
+export default DuoCircularBlade
