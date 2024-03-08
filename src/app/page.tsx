@@ -5,6 +5,7 @@ import {
   BlogPostSection,
   ResourcesSection,
   FeedbackSection,
+  InformationHubSection,
 } from '@/components'
 import React from 'react'
 
@@ -17,6 +18,7 @@ export default function Home() {
       <BlogPostSection />
       <ResourcesSection />
       <FeedbackSection />
+      <InformationHubSection />
     </main>
   )
 }

@@ -28,6 +28,7 @@ export { default as ResourceList } from '@/components/ResourceList/ResourceList'
 export { default as ResourceTitle } from '@/components/ResourceTitle/ResourceTitle'
 export { default as ResourceCard } from '@/components/ResourceCard/ResourceCard'
 export { default as FeedbackCard } from '@/components/FeedbackCard/FeedbackCard'
+export { default as InformationHubHeader } from '@/components/InformationHubHeader/InformationHubHeader'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
@@ -37,3 +38,4 @@ export { default as FeaturesSection } from '@/components/templates/FeaturesSecti
 export { default as BlogPostSection } from '@/components/templates/BlogPostSection'
 export { default as ResourcesSection } from '@/components/templates/ResourcesSection'
 export { default as FeedbackSection } from '@/components/templates/FeedbackSection'
+export { default as InformationHubSection } from '@/components/templates/InformationHubSection'

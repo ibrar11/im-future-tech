@@ -65,6 +65,7 @@ const config: Config = {
         13: '52px',
         15: '60px',
         12.5: '50px',
+        30: '120px',
         '13/20': '65%',
         '7/20': '35%',
         '7/10': '70%',
@@ -85,6 +86,7 @@ const config: Config = {
         15: '60px',
         7.5: '30px',
         25: '100px',
+        12.5: '50px',
       },
       borderRadius: {
         '2lg': '10px',
@@ -92,12 +94,17 @@ const config: Config = {
       padding: {
         '4.5': '18px',
         '12.5': '50px',
+        '22': '90px',
         '25': '100px',
         '37.5': '150px',
         '15': '60px',
+        7.5: '30px',
       },
       flexGrow: {
         '1.5': '1.5',
+      },
+      gridTemplateColumns: {
+        'custom-template': '0.5fr 1fr 1fr',
       },
     },
   },
