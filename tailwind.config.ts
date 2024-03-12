@@ -107,6 +107,9 @@ const config: Config = {
       gridTemplateColumns: {
         'custom-template': '0.5fr 1fr 1fr',
       },
+      spacing: {
+        '19.5': '77px',
+      },
     },
   },
   plugins: [],

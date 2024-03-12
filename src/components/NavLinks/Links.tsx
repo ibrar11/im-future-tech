@@ -15,7 +15,7 @@ const Links = (props: NavLinksProps) => {
     <div
       className={
         dropDown
-          ? 'bg-nav-gradient blur-10 absolute left-0 right-0 top-20 z-20 flex h-[70vh] w-full flex-col justify-between rounded-lg p-5 transition-all duration-300 ease-out sm:h-[80vh]'
+          ? 'bg-nav-gradient blur-10 top-19.5 absolute left-0 right-0 z-20 flex h-[70vh] w-full flex-col justify-between rounded-lg p-5 transition-[height] duration-300 ease-out sm:h-[80vh]'
           : 'h-0 w-0 overflow-hidden md:flex md:h-auto md:w-max xl:gap-x-16'
       }
     >
