@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type FooterSocialLinksProps = {
@@ -7,9 +8,12 @@ type FooterSocialLinksProps = {
 const FooterSocialLinks = (props: FooterSocialLinksProps) => {
   const { icon } = props
   return (
-    <span className="flex size-5 items-center justify-center 2xl:size-6">
+    <Link
+      href={'/'}
+      className="flex size-5 items-center justify-center 2xl:size-6"
+    >
       {icon}
-    </span>
+    </Link>
   )
 }
 
