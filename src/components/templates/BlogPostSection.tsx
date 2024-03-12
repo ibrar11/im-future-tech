@@ -4,6 +4,7 @@ import { BlogPost, Container, SectionHeader } from '..'
 import { ArrowUpRight } from '@/icons'
 import { postList, tabs } from '../PostContentItem/postContentList'
 import Slider from '../Slider'
+import { LuSearchX } from 'react-icons/lu'
 
 const BlogPostSection = () => {
   const [active, setActive] = useState(1)
@@ -22,16 +23,31 @@ const BlogPostSection = () => {
         linkText="View All Blogs"
       />
       <Container>
-        <div>
+        <div className="flex flex-col">
           <div className="lg:flex lg:justify-center">
             <Slider tabs={tabs} state={active} setState={handleActive} />
           </div>
-          <div>
-            {postList.map(
-              (post) =>
-                4 - post.id >= active && <BlogPost post={post} key={post.id} />,
+          <>
+            {active >= 4 ? (
+              <div className="self-center p-10">
+                <div className="rounded-2lg flex max-w-fit flex-col items-center justify-center bg-yellow-200 p-2">
+                  <LuSearchX className="size-20" />
+                  <p className="text-center text-base font-normal md:text-lg 2xl:text-xl">
+                    Result Not Found. Select other tabs
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <div>
+                {postList.map(
+                  (post) =>
+                    4 - post.id >= active && (
+                      <BlogPost post={post} key={post.id} />
+                    ),
+                )}
+              </div>
             )}
-          </div>
+          </>
         </div>
       </Container>
     </section>
