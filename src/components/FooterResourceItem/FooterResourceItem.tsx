@@ -2,6 +2,7 @@ import React from 'react'
 import { SubTitles } from '../FooterListItem/footerList'
 import { Button } from '..'
 import { ArrowUpRight } from '@/icons'
+import Link from 'next/link'
 
 type FooterReourceItemProps = {
   title: string
@@ -12,9 +13,12 @@ const FooterResourceItem = (props: FooterReourceItemProps) => {
   const { title = '', subTitles = [] } = props
   return (
     <div className="flex flex-col gap-y-4 md:gap-y-7 2xl:gap-y-9">
-      <p className="text-base font-medium text-white md:text-lg 2xl:text-xl">
+      <Link
+        href={'/'}
+        className="text-base font-medium text-white hover:text-grey-200 md:text-lg 2xl:text-xl"
+      >
         {title}
-      </p>
+      </Link>
       <div className="flex flex-wrap gap-x-3 gap-y-2 md:flex-col md:gap-y-3 2xl:gap-y-5">
         {subTitles.map((item) => (
           <Button

@@ -7,6 +7,7 @@ import {
 } from '..'
 import { footerListData } from '../FooterListItem/footerList'
 import { socialLinks } from '../FooterSocialLinks/socialLinks'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -37,13 +38,19 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex items-center gap-x-2.5 md:order-1">
-              <p className="text-sm font-normal text-dark-900 2xl:text-lg">
+              <Link
+                href={'/'}
+                className="text-sm font-normal text-dark-900 hover:text-grey-300 2xl:text-lg"
+              >
                 Terms & Conditions
-              </p>
+              </Link>
               <hr className="w-4.5 flex rotate-90  border border-dark-400" />
-              <p className="text-sm font-normal text-dark-900 2xl:text-lg">
+              <Link
+                href={'/'}
+                className="text-sm font-normal text-dark-900 hover:text-grey-300 2xl:text-lg"
+              >
                 Privacy Policy
-              </p>
+              </Link>
             </div>
             <p className="text-sm font-normal text-dark-900 md:order-3 2xl:text-lg">
               © 2024 FutureTech. All rights reserved.
