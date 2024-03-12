@@ -50,7 +50,7 @@ const AchievementCard = (props: BenefitsListItemProps) => {
         </div>
         <Link
           href={'/'}
-          className="2xl:w-13 2xl:h-13 right-0 top-[40%] flex h-10 w-10 items-center justify-center rounded-full bg-yellow-200 p-3 md:h-11 md:w-11"
+          className="2xl:w-13 2xl:h-13 right-0 top-[40%] flex h-10 w-10 items-center justify-center rounded-full bg-yellow-200 p-3 hover:bg-yellow-300 hover:text-dark-400 focus:text-dark-500 focus:ring focus:ring-yellow-500 active:bg-yellow-300 active:text-dark-300 md:h-11 md:w-11"
         >
           <ArrowUpRight color="black" />
         </Link>
