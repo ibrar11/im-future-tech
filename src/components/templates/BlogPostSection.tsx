@@ -29,7 +29,7 @@ const BlogPostSection = () => {
           <div>
             {postList.map(
               (post) =>
-                (4 - post.id) >= active && <BlogPost post={post} key={post.id} />,
+                4 - post.id >= active && <BlogPost post={post} key={post.id} />,
             )}
           </div>
         </div>

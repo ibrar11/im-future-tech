@@ -6,6 +6,7 @@ import {
   ResourcesSection,
   FeedbackSection,
   InformationHubSection,
+  Footer,
 } from '@/components'
 import React from 'react'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ResourcesSection />
       <FeedbackSection />
       <InformationHubSection />
+      <Footer />
     </main>
   )
 }

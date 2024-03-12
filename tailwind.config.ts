@@ -62,6 +62,7 @@ const config: Config = {
       },
       width: {
         'calc-width': 'calc(100% + 6.5px)',
+        4.5: '18px',
         13: '52px',
         15: '60px',
         12.5: '50px',

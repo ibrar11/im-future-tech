@@ -29,6 +29,8 @@ export { default as ResourceTitle } from '@/components/ResourceTitle/ResourceTit
 export { default as ResourceCard } from '@/components/ResourceCard/ResourceCard'
 export { default as FeedbackCard } from '@/components/FeedbackCard/FeedbackCard'
 export { default as InformationHubHeader } from '@/components/InformationHubHeader/InformationHubHeader'
+export { default as FooterResourceItem } from '@/components/FooterResourceItem/FooterResourceItem'
+export { default as FooterSocialLinks } from '@/components/FooterSocialLinks/FooterSocialLinks'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
@@ -39,3 +41,4 @@ export { default as BlogPostSection } from '@/components/templates/BlogPostSecti
 export { default as ResourcesSection } from '@/components/templates/ResourcesSection'
 export { default as FeedbackSection } from '@/components/templates/FeedbackSection'
 export { default as InformationHubSection } from '@/components/templates/InformationHubSection'
+export { default as Footer } from '@/components/templates/Footer'
