@@ -37,6 +37,7 @@ const FeaturesSection = () => {
                     key={feature.id}
                     description={feature.description}
                     title={feature.title}
+                    href="/"
                   />
                 ))}
               </div>
