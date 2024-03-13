@@ -1,10 +1,11 @@
 import React from 'react'
-import { HeadlineSection} from './newsComponents'
+import { HeadlineSection, NewsBlogSection } from './newsComponents'
 
 const News = () => {
   return (
     <main>
       <HeadlineSection />
+      <NewsBlogSection />
     </main>
   )
 }

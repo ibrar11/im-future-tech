@@ -75,6 +75,7 @@ const config: Config = {
       },
       minWidth: {
         38: '152px',
+        '3/10': '30%',
       },
       fontSize: {
         '4.5xl': '40px',
