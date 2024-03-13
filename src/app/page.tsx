@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   HeroSection,
   AchievementSection,
@@ -7,7 +8,6 @@ import {
   FeedbackSection,
   InformationHubSection,
 } from '@/components'
-import React from 'react'
 
 export default function Home() {
   return (
