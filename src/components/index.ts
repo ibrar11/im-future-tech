@@ -31,6 +31,7 @@ export { default as FeedbackCard } from '@/components/FeedbackCard/FeedbackCard'
 export { default as InformationHubHeader } from '@/components/InformationHubHeader/InformationHubHeader'
 export { default as FooterResourceItem } from '@/components/FooterResourceItem/FooterResourceItem'
 export { default as FooterSocialLinks } from '@/components/FooterSocialLinks/FooterSocialLinks'
+export { default as TitleContentBlock } from '@/components/TitleContentBlock/TitleContentBlock'
 
 //sections
 export { default as Header } from '@/components/templates/Header'
