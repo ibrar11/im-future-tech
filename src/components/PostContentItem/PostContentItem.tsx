@@ -6,10 +6,11 @@ import { ArrowUpRight } from '@/icons'
 type PostContentItemProps = {
   post: PostContentType
   styles?: string
+  buttonText: string
 }
 
 const PostContentItem = (props: PostContentItemProps) => {
-  const { post, styles = '' } = props
+  const { post, styles = '', buttonText } = props
   return (
     <div className="md:w-7/10 justify-between md:flex lg:w-3/4 xl:w-4/5">
       <div className="2xl:gap-y-7.5 md:max-w-7/10 lg:max-w-4/5 xl:max-w-9/10 flex flex-col items-start gap-y-5 md:gap-y-6">
@@ -40,7 +41,7 @@ const PostContentItem = (props: PostContentItemProps) => {
       </div>
       <span className="hidden md:block">
         <Button href="/" iconStyle="p-0.5 md:size-6" icon={<ArrowUpRight />}>
-          View Blog
+          {buttonText}
         </Button>
       </span>
     </div>

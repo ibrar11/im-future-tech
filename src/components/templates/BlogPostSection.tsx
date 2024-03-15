@@ -6,7 +6,20 @@ import { postList, tabs } from '../PostContentItem/postContentList'
 import Slider from '../Slider'
 import { LuSearchX } from 'react-icons/lu'
 
-const BlogPostSection = () => {
+type BlogPostSectionProps = {
+  headerTitle?: string
+  badgeTitle?: string
+  headerButtonText?: string
+  buttonText?: string
+}
+
+const BlogPostSection = (props: BlogPostSectionProps) => {
+  const {
+    headerTitle = "Explore FutureTech's In-Depth Blog Posts",
+    badgeTitle = 'A Knowledge Treasure Trove',
+    headerButtonText = 'View All Blogs',
+    buttonText = 'View Blog',
+  } = props
   const [active, setActive] = useState(1)
 
   const handleActive = (number: number): void => {
@@ -16,11 +29,11 @@ const BlogPostSection = () => {
   return (
     <section>
       <SectionHeader
-        title="Explore FutureTech's In-Depth Blog Posts"
-        badgeTitle="A Knowledge Treasure Trove"
+        title={headerTitle}
+        badgeTitle={badgeTitle}
         variant="primary"
         icon={<ArrowUpRight color="#FFD11A" />}
-        linkText="View All Blogs"
+        linkText={headerButtonText}
       />
       <Container>
         <div className="flex flex-col">
@@ -42,7 +55,11 @@ const BlogPostSection = () => {
                 {postList.map(
                   (post) =>
                     4 - post.id >= active && (
-                      <BlogPost post={post} key={post.id} />
+                      <BlogPost
+                        post={post}
+                        key={post.id}
+                        buttonText={buttonText}
+                      />
                     ),
                 )}
               </div>
