@@ -6,7 +6,6 @@ import {
   BlogPostSection,
   ResourcesSection,
   FeedbackSection,
-  InformationHubSection,
 } from '@/components'
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <BlogPostSection />
       <ResourcesSection />
       <FeedbackSection />
-      <InformationHubSection />
     </main>
   )
 }
