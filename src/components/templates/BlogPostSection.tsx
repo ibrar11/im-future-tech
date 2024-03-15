@@ -18,7 +18,7 @@ const BlogPostSection = (props: BlogPostSectionProps) => {
     headerTitle = "Explore FutureTech's In-Depth Blog Posts",
     badgeTitle = 'A Knowledge Treasure Trove',
     headerButtonText = 'View All Blogs',
-    buttonText,
+    buttonText = 'View Blog',
   } = props
   const [active, setActive] = useState(1)
 

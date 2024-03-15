@@ -5,11 +5,11 @@ import { PostContentType } from '../PostContentItem/postContentList'
 
 type BlogPostProps = {
   post: PostContentType
-  buttonText?: string
+  buttonText: string
 }
 
 const BlogPost = (props: BlogPostProps) => {
-  const { post, buttonText = 'View Blog' } = props
+  const { post, buttonText } = props
 
   return (
     <div
@@ -24,12 +24,17 @@ const BlogPost = (props: BlogPostProps) => {
           alt={post?.about}
         />
         <span className="md:hidden">
-          <Button href="/" iconStyle="p-0.5 md:size-6" icon={<ArrowUpRight />}>
+          <Button
+            href="/"
+            iconStyle="p-0.5 md:size-6"
+            icon={<ArrowUpRight />}
+            variant="primary"
+          >
             {buttonText}
           </Button>
         </span>
       </div>
-      <PostContentItem post={post} />
+      <PostContentItem post={post} buttonText={buttonText} />
     </div>
   )
 }
