@@ -21,7 +21,7 @@ const FooterListItem = (props: FooterListItemProps) => {
         {subTitles.map((item) => (
           <div
             key={item.id}
-            className="flex items-center gap-x-0.5 pr-0.5 sm:gap-x-2"
+            className="flex flex-wrap items-center gap-x-2 gap-y-1 pr-0.5"
           >
             <Link
               href={'/'}
