@@ -6,6 +6,7 @@ type ResourceDescriptionItemProps = {
   description: string
   path: string
   alt: string
+  detailsStyles?: string
 }
 
 const ResourceDescriptionItem = (props: ResourceDescriptionItemProps) => {
@@ -15,10 +16,13 @@ const ResourceDescriptionItem = (props: ResourceDescriptionItemProps) => {
     description = '',
     path = '',
     alt = '',
+    detailsStyles = '',
   } = props
   return (
     <div className={`flex flex-col gap-y-6 ${styles}`}>
-      <div className="flex flex-col gap-y-2.5 sm:flex-row sm:items-center sm:gap-x-4 2xl:gap-x-5">
+      <div
+        className={`flex flex-col gap-y-2.5 sm:flex-row sm:items-center sm:gap-x-4 2xl:gap-x-5 ${detailsStyles}`}
+      >
         <p className="min-w-48 text-lg font-semibold text-white md:text-xl 2xl:text-2xl">
           {title}
         </p>

@@ -1,5 +1,9 @@
 import React from 'react'
-import { HeadlineSection, NewsBlogSection } from './newsComponents'
+import {
+  FeaturedVideosSection,
+  HeadlineSection,
+  NewsBlogSection,
+} from './newsComponents'
 import { BlogPostSection } from '@/components'
 
 const News = () => {
@@ -13,6 +17,7 @@ const News = () => {
         headerButtonText="View All News"
         buttonText="Read More"
       />
+      <FeaturedVideosSection />
     </main>
   )
 }
